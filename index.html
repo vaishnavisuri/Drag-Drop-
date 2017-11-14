@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='componentBuilder' ng-controller='ComponentBuilderMainController'>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Component Builder</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-ui-grid/ui-grid.min.css" />
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="ext-lib/ng-slim-scroll.css" rel="stylesheet"></script>
+   
+   <!-- <link rel="stylesheet" type="text/css" href="css/common-component.css" />
+    <link rel="stylesheet" type="text/css" href="css/form-ui-element.css" />
+    <link rel="stylesheet" type="text/css" href="css/componentBuilder.css" /> -->
+	 <link rel="stylesheet" type="text/css" href="componentBuilder.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-ui-bootstrap-datetimepicker/datetimepicker.css" />
+
+</head>
+
+<body>
+    <div>
+        <form-builder json="json" only-custom-controls-allowed="true"></form-builder>
+
+
+        <!--   <div class="col-sm-6">
+      <div class="panel panel-info">
+        <div class="panel-heading"><h3 class="panel-title">List1            </h3></div>
+        <div class="panel-body">
+          <ul dnd-list dnd-drop="callback({targetList: list1, targetIndex: index})">
+            <li ng-repeat="item in list1"
+                dnd-draggable="null" dnd-callback="onDrop(list1, $index,targetList,targetIndex )">
+              {{item.name}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+     <div class="col-sm-6">
+      <div class="panel panel-info">
+        <div class="panel-heading"><h3 class="panel-title">List1            </h3></div>
+        <div class="panel-body">
+          <ul dnd-list dnd-drop="callback({targetList: list2, targetIndex: index})">
+            <li ng-repeat="item in list2">
+              {{item.name}}
+            </li>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/lodash/lodash.js"></script>
+    <script src="node_modules/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js"></script>
+    <script src="node_modules/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="ext-lib/ui-bootstrap-tpls.js"></script>
+    <script src="ext-lib/datetime-picker.js"></script>
+    <script src="ext-lib/ng-slim-scroll.js"></script>
+    <script src="componentBuilder.js"></script>
+</body>
+
+</html>

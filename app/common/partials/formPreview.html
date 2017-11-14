@@ -1,0 +1,15 @@
+<div class="panel panel-default panel-primary col-md-12 col-lg-12 col-xs-12 border-grid" style="border:3px solid #99bce8;border-radius:5px;">          
+          <div class="panel-heading"><span class="subheading"><div align="right"><button  class="btn btn-default btn-xs" ng-click="cancelPreview()">cancel</button></div> </span></div> 
+        <div class="panel-content">  	
+		<div class = "col-md-12 col-lg-12 col-xs-12" style="margin-top:20px; margin-bottom:20px;">	
+
+			<div ng-repeat="zone in models.dropzones[0]" >			 
+			   <div ng-class="getDropzoneDivClass(zone.resizeDiv)" >
+				<div ng-class="getDropzoneElementClass(zone.resize)">
+				<json-to-htmlpreview input-type="zone.type" condition-array="zone.properties" ng-model="zone.modelID" custom_function="zone.eventFunction[0]" ></json-to-htmlpreview> 
+				</div>
+				</div>
+			</div>				 
+		</div>		
+	  </div>	
+	</div>  
